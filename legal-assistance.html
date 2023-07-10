@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Refugee Connect - Legal Resources</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <h1>Refugee Connect</h1>
+    </header>
+    <main>
+        <section class="legal-resources-section">
+            <div class="container">
+                <h2>Legal Resources</h2>
+                <p>Fill out the form below to get matched with a representative who can provide the legal services you need.</p>
+                
+                <form id="legal-form" action="submit_form.php" method="POST">
+                    <label for="age">Age:</label>
+                    <input type="text" id="age" name="age" required>
+                    
+                    <label for="ethnicity">Ethnicity:</label>
+                    <input type="text" id="ethnicity" name="ethnicity" required>
+                    
+                    <label for="sex">Sex:</label>
+                    <select id="sex" name="sex" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                    <label for="legal-services">Legal Services Needed:</label>
+                    <textarea id="legal-services" name="legal-services" rows="4" required></textarea>
+                    
+                    <label for="special-requests">Special Requests:</label>
+                    <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Refugee Connect. All rights reserved.</p>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-twitter" aria-label="Twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook" aria-label="Facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram" aria-label="Instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
