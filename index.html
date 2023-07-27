@@ -16,6 +16,8 @@
                 <li><a href="resources.html">Resources</a></li>
                 <li><a href="community.html">Community</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="language-learning.html">Language Learning</a></li>
+                <li><a href="legal-assistance.html">Legal Assistance</a></li>
             </ul>
         </nav>
         <h1>Refugee Connect</h1>
@@ -37,28 +39,127 @@
                 <p>
                     With Refugee Connect, refugees can access essential information, connect with aid organizations, find legal assistance, learn languages, and discover educational opportunities. The app also facilitates community engagement, allowing refugees to connect with others, share experiences, and find emotional support.
                 </p>
+                <a href="about.html" class="cta-button">Learn More</a>
             </div>
         </section>
         <section class="features-section">
             <div class="container">
                 <h2>Key Features</h2>
                 <div class="feature">
-                    <a href="language-learning.html">
-                    <img src="img/language-learning.png" alt="Alphabet letters on the floor"></a> 
-                    <h3>Language Learning</h3>
-                    <p>Interactive language courses tailored to different proficiency levels, including vocabulary, pronunciation, and translation tools.</p>
+                    <h3>Chat with Other Refugees</h3>
+                    <div class="chatbox">
+                        <p><strong>User1:</strong> Hi, everyone!</p>
+                        <p><strong>User2:</strong> Hi User1, how are you?</p>
+                        <p><strong>User3:</strong> Can someone recommend local job search resources?</p>
+                    </div>
+                    <form class="chat-form" id="chat-form">
+                        <input type="text" id="message-input" placeholder="Type your message..." required>
+                        <button type="submit">Send</button>
+                    </form>
                 </div>
-                <div class="feature">
-                    <a href="legal-assistance.html">
-                    <img src="img/legal-assistance.png" alt="Bookshelf full of legal books"></a>
-                    <h3>Legal Assistance</h3>
-                    <p>Connect with experienced legal representatives based on specific criteria, ensuring proper guidance and support in legal matters.</p>
+                <div class="language-learning-section">
+                    <div class="container">
+                        <h2>Language Learning</h2>
+                        <p>Enhance your language skills with various language-learning features:</p>
+                        
+                        <div class="lesson">
+                            <h3>Sample Lesson 1</h3>
+                            <p>This is a sample lesson to introduce basic vocabulary and phrases. You can view the lesson materials and practice exercises.</p>
+                            <a href="#">View Lesson</a>
+                        </div>
+                        
+                        <div class="lesson">
+                            <h3>Sample Lesson 2</h3>
+                            <p>This lesson focuses on grammar rules and sentence structure. You can study the lesson materials and complete interactive exercises.</p>
+                            <a href="#">View Lesson</a>
+                        </div>
+                        
+                        <div class="language-quiz">
+                            <h3>Language Quiz</h3>
+                            <p>Test your knowledge with a language quiz. Choose the correct answers and receive instant feedback.</p>
+                            <form id="quiz-form">
+                                <p>Question 1: What is the translation of "hello"?</p>
+                                <label>
+                                    <input type="radio" name="q1" value="option1"> Option 1
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="radio" name="q1" value="option2"> Option 2
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="radio" name="q1" value="option3"> Option 3
+                                </label>
+                                <br>
+                                <button type="submit">Submit</button>
+                            </form>
+                            <div id="quiz-feedback"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="img/language-learning.png" alt="Alphabet letters on the floor" class="responsive-image"></a>
+                    </div>
                 </div>
-                <div class="feature">
-                    <a href="resources.html">
-                    <img src="img/resource-mapping.png" alt="Paper maps on top of other paper maps"></a>
-                    <h3>Resource Mapping</h3>
-                    <p>Discover nearby healthcare facilities, education centers, employment agencies, and community organizations through an interactive map.</p>
+                <div class="resource-discovery-section">
+                    <div class="container">
+                        <h2>Resource Navigation</h2>
+                        <p>Explore resources available to refugees:</p>
+                
+                        <div class="filter-container">
+                            <input type="text" id="search-input" placeholder="Search resources...">
+                            <select id="category-select">
+                                <option value="">All Categories</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="education">Education</option>
+                                <option value="employment">Employment</option>
+                            </select>
+                        </div>
+                
+                        <ul id="resource-list">
+                            <li data-category="healthcare"><a href="https://drive.google.com/drive/folders/1hBjU9xiAYHd6SjdJ4-aRnGFSYrULtBOi">Ukrainian and Russian-speaking health providers</a></li>
+                            <li data-category="healthcare"><a href="https://drive.google.com/drive/folders/1hBjU9xiAYHd6SjdJ4-aRnGFSYrULtBOi">List of Ukrainian and Russian-speaking mental health specialists</a></li>
+                            <li data-category="education"><a href="https://vax4school.org/">School readiness for new Ukrainian arrivals</a></li>
+                            <li data-category="employment"><a href="https://www.ziprecruiter.com/">Employment</a></li>
+                            <li data-category="housing"><a href="https://www.rescue.org/announcement/welcoming-our-ukrainian-neighbors-washington">Financial Support Programs for Housing</a></li>
+                            <li data-category="food"><a href="https://www.dshs.wa.gov/esa/community-services-offices/basic-food">Applying for Supplemental Nutrition</a></li>
+                        </ul>
+                
+                        <div class="resources-visualization">
+                            <div class="resource-card">
+                                <h4>Uniting for Ukraine</h4>
+                                <p>Website: <a href="https://www.uscis.gov">www.uscis.gov</a></p>
+                            </div>
+                            <div class="resource-card">
+                                <h4>Ukrainian Association of Washington State</h4>
+                                <p>Website: <a href="https://www.uaws.org">www.uaws.org</a></p>
+                            </div>
+                            <div class="resource-card">
+                                <h4><a href="https://uaws.org/resources-for-ukrainian-refugees/">Find more resources here</a></h4>
+                                <img src="img/resource-mapping.png" alt="Paper maps on top of other paper maps" class="responsive-image"></a>
+                            </div>
+                        </div>
+                
+                        <p>Explore more resources on the <a href="resources.html">Resources Map</a>.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="legal-assistance-section">
+                <div class="container">
+                    <h2>Legal Assistance</h2>
+                    <p>If you need legal assistance, please fill out the form below and we will get back to you as soon as possible:</p>
+                    <form id="legal-form">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" rows="4" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="container">
+                    <img src="img/legal-assistance.png" alt="Bookshelf full of legal books" class="responsive-image"></a>
                 </div>
             </div>
         </section>
@@ -73,5 +174,28 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"></script>
+    <script>
+        const searchInput = document.getElementById('search-input');
+        const categorySelect = document.getElementById('category-select');
+        const resourceList = document.getElementById('resource-list').getElementsByTagName('li');
+
+        function filterResources() {
+            const searchQuery = searchInput.value.toLowerCase();
+            const selectedCategory = categorySelect.value.toLowerCase();
+
+            for (const resource of resourceList) {
+                const resourceText = resource.textContent.toLowerCase();
+                const resourceCategory = resource.getAttribute('data-category').toLowerCase();
+
+                const isMatch = resourceText.includes(searchQuery) && (selectedCategory === '' || resourceCategory === selectedCategory);
+
+                resource.style.display = isMatch ? 'block' : 'none';
+            }
+        }
+
+        searchInput.addEventListener('input', filterResources);
+        categorySelect.addEventListener('change', filterResources);
+    </script>
 </body>
 </html>
