@@ -188,24 +188,24 @@ footer p {
     padding: 40px;
   }
   
-  .resource-discovery-section h2 {
+.resource-discovery-section h2 {
     font-size: 28px;
     margin-bottom: 20px;
-  }
+}
   
-  .resource-discovery-section p {
+.resource-discovery-section p {
     font-size: 16px;
     margin-bottom: 15px;
-  }
-  
-  .filter-container {
+}
+
+.filter-container {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-  }
-  
-  .filter-container input[type="text"],
-  .filter-container select {
+}
+
+.filter-container input[type="text"],
+.filter-container select {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -213,37 +213,37 @@ footer p {
     margin-right: 10px;
     flex: 1;
     max-width: 300px;
-  }
-  
-  #resource-list {
+}
+
+#resource-list {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  #resource-list li {
+}
+
+#resource-list li {
     font-size: 16px;
     margin-bottom: 10px;
-  }
-  
-  .resources-visualization {
+}
+
+.resources-visualization {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     margin-top: 20px;
-  }
-  
-  .resource-card {
+}
+
+.resource-card {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #fff;
-  }
+}
   
-  .resource-card h4 {
+.resource-card h4 {
     font-size: 18px;
     margin-bottom: 10px;
-  }
+}
   
   .resource-card p {
     font-size: 14px;
@@ -450,8 +450,74 @@ footer p {
     }
 }
 
-#map {
-    height: 600px;
+#map-container {
+    height: 400px;
+    width: 70%;
+    margin: 0 auto;
+    position: sticky;
+    top: 20px;
+  }
+  
+  #map {
+    height: 100%;
+  }
+
+  .game {
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 16px;
+  }
+  
+  .word-matching-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .word, .translation {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    user-select: none;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .word.matched, .translation.matched {
+    background-color: #b9f6ca;
+  }
+  
+  .translation-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+    margin-bottom: 32px;
+  }  
+
+  button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .chat-section {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+  .game-result {
+    margin-top: 16px;
 }
 
 .chatbox {

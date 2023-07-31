@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Refugee Connect - Resources</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <h1>Refugee Connect</h1>
+    </header>
+    <section class="content-section">
+        <div class="container">
+            <h2>Resources</h2>
+            <p>Explore the resources available to refugees:</p>
+            
+            <div id="map"></div>
+            
+            <ul>
+                <li>
+                    <strong>Uniting for Ukraine</strong><br>
+                    Website: <a href="https://www.uscis.gov">www.uscis.gov</a>
+                </li>
+                <li>
+                    <strong>Ukrainian Assocation of Washington State</strong><br>
+                    Website: <a href="https://www.uaws.org">www.uaws.org</a>
+                </li>
+                <li>
+                    <strong><a href="https://uaws.org/resources-for-ukrainian-refugees/">Find more resources listed here such as food banks, medical facilites, education, and more</a></strong>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Refugee Connect. All rights reserved.</p>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([47.6062, -122.3321], 10);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+            maxZoom: 18,
+        }).addTo(map);
+        var resources = [
+            {
+                name: "Uniting for Ukraine",
+                lat: 47.6038,
+                lng: -122.3301,
+                description: "Website: <a href='https://www.uscis.gov'>www.uscis.gov</a>",
+            },
+            {
+                name: "Ukrainian Community Center",
+                lat: 47.482380,
+                lng: -122.245392,
+                description: "Website: <a href='https://uccwa.org/'>www.uccwa.org/</a>",
+            },
+            {
+                name: "Honorary Consulate of Ukraine in Seattle",
+                lat: 47.602190,
+                lng: -122.333490,
+                description: "Website: <a href='http://uaconsulate.org/'>www.uaconsulate.org</a>"
+            }
+        ];
+        resources.forEach(function(resource) {
+            var marker = L.marker([resource.lat, resource.lng]).addTo(map);
+            var popupContent = "<strong>" + resource.name + "</strong><br>" + resource.description;
+            marker.bindPopup(popupContent);
+        });
+    </script>
+</body>
+</html>
