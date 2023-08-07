@@ -6,10 +6,7 @@ const handleLegalFormSubmit = (event) => {
     const nameInput = form.querySelector("#name");
     const contactInput = form.querySelector("#contact-info");
     const ageInput = form.querySelector("#age");
-    const ethnicityInput = form.querySelector('#ethnicity');
-    const sexInput = form.querySelector('#sex');
     const legalInput = form.querySelector('#legal-services');
-    const specialInput = form.querySelector('#special-requests');
 
     if (nameInput.value.trim() === "") {
         alert("Please fill out your name.")

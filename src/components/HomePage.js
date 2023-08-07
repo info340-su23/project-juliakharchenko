@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react';
 import {Link} from "react-router-dom";
 import ChatBox from "./ChatBox";
 import io from "socket.io-client";
-const resourceMapping = require("../img/resource-mapping.png");
-const legalAssistance = require("../img/legal-assistance.png");
-const languageLearning = require("../img/language-learning.png");
-const chatBoxImage = require('../img/chat.png');
-const socket = io();
+// Using var for images because did not compile with either 'const' or 'let'
+var resourceMapping = require("../img/resource-mapping.png");
+var legalAssistance = require("../img/legal-assistance.png");
+var languageLearning = require("../img/language-learning.png");
+var chatBoxImage = require('../img/chat.png');
+var socket = io();
 
 const handleQuizSubmit = (event) => {
     event.preventDefault();
