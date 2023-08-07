@@ -1,0 +1,627 @@
+html, body, h1, h2, h3, p, ul, li, label, button, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    vertical-align: baseline;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+.responsive-image {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffc107;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffc107;
+}
+
+.hero {
+    background-image: linear-gradient(to bottom right, #ff9800, #ff5722);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    color: #4d1e1e;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tagline {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ffc107;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff9800;
+}
+
+.about-section {
+    background-color: #ffc107;
+    padding: 40px 0;
+    text-align: center;
+    color: #333;
+}
+
+.about-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.features-section {
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.feature img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #777;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+    color: #ffc107;
+}
+
+.resource-discovery-section {
+    background-color: #f5f5f5;
+    padding: 40px;
+  }
+  
+.resource-discovery-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+  
+.resource-discovery-section p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-container input[type="text"],
+.filter-container select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    flex: 1;
+    max-width: 300px;
+}
+
+#resource-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#resource-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.resources-visualization {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.resource-card {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+  
+.resource-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+  
+  .resource-card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .resource-card a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .resource-card a:hover {
+    text-decoration: underline;
+  }
+  
+  .resource-discovery-section p:last-child {
+    margin-top: 20px;
+  }
+  
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 20px 0;
+    }
+  
+    .container {
+        padding: 40px;
+    }
+  
+    .hero {
+        height: 600px;
+    }
+  
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+  
+    .hero-content {
+        width: 70%;
+        margin: 0 auto;
+    }
+  
+    h2 {
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+  
+    .tagline {
+        font-size: 24px;
+        margin-bottom: 60px;
+    }
+  
+    .cta-button {
+        padding: 16px 40px;
+        font-size: 24px;
+    }
+  
+    .about-section {
+        padding: 80px 0;
+    }
+  
+    .about-section h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+  
+    .features-section {
+        padding: 100px 0;
+    }
+  
+    .feature {
+        margin-bottom: 60px;
+    }
+  
+    .feature img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+  
+    .feature h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+  
+    .feature p {
+        font-size: 18px;
+    }
+  
+    footer p {
+        font-size: 16px;
+    }
+}
+/*check*/
+.legal-resources-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.legal-resources-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.legal-resources-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#legal-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#legal-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#legal-form input[type="text"],
+#legal-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+#legal-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+#legal-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+#legal-form button[type="submit"] {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ffc107;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+#legal-form button[type="submit"]:hover {
+    background-color: #ff9800;
+}
+
+#legal-form input:focus,
+#legal-form textarea:focus,
+#legal-form select:focus {
+    outline: none;
+    border-color: #ffc107;
+}
+
+@media screen and (min-width: 768px) {
+    .legal-resources-section {
+        padding: 100px 0;
+    }
+    
+    .legal-resources-section h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    
+    .legal-resources-section p {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    
+    #legal-form {
+        max-width: 800px;
+    }
+    
+    #legal-form input[type="text"],
+    #legal-form textarea {
+        font-size: 18px;
+    }
+    
+    #legal-form select {
+        font-size: 18px;
+    }
+    
+    #legal-form button[type="submit"] {
+        padding: 16px 40px;
+        font-size: 24px;
+    }
+}
+
+#map-container {
+    height: 400px;
+    width: 70%;
+    margin: 0 auto;
+    position: sticky;
+    top: 20px;
+  }
+  
+  #map {
+    height: 100%;
+  }
+
+  .game {
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 16px;
+  }
+  
+  .word-matching-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .word, .translation {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    user-select: none;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .word.matched, .translation.matched {
+    background-color: #b9f6ca;
+  }
+  
+  .translation-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+    margin-bottom: 32px;
+  }  
+
+  button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .chat-section {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+  .game-result {
+    margin-top: 16px;
+}
+
+.chatbox {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.chatbox p {
+    margin-bottom: 10px;
+}
+
+.chat-form input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.chat-form button[type="submit"] {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #ffc107;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.chat-form button[type="submit"]:hover {
+    background-color: #ff9800;
+}
+
+.chat-form input:focus {
+    outline: none;
+    border-color: #ffc107;
+}
+
+.lesson {
+    margin-bottom: 30px;
+}
+
+.lesson h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.lesson p {
+    margin-bottom: 20px;
+}
+
+.lesson a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.lesson a:hover {
+    text-decoration: underline;
+}
+
+.game {
+    margin-bottom: 30px;
+}
+
+.game h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.game p {
+    margin-bottom: 20px;
+}
+
+.quiz {
+    margin-bottom: 30px;
+}
+
+.quiz h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.quiz p {
+    margin-bottom: 20px;
+}
+
+.quiz button[type="submit"] {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #ffc107;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.quiz button[type="submit"]:hover {
+    background-color: #ff9800;
+}
