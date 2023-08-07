@@ -1,6 +1,6 @@
 import React from 'react';
-var connectionImage = require('../img/connection.png');
-var helpingHandsImage = require('../img/helping-hands.png');
+const connectionImage = require('../img/connection.png');
+const helpingHandsImage = require('../img/helping-hands.png');
 
 const AboutPage = () => {
   return (

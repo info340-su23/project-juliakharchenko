@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-var gameImage = require('../img/game.png');
+const gameImage = require('../img/game.png');
 
 const LanguageLearningPage = () => {
   const [gameStarted, setGameStarted] = useState(false);

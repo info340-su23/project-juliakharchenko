@@ -1,0 +1,22 @@
+[{
+    "name": "Uniting for Ukraine",
+    "lat": 47.6038,
+    "lng": -122.3301,
+    "description": "Refugee Services - Fleeing Invasion",
+    "link": "Website: <a href='https://www.uscis.gov'>www.uscis.gov</a>"
+  },
+  {
+    "name": "Ukrainian Community Center",
+    "lat": 47.482380,
+    "lng": -122.245392,
+    "description": "Immigration; Behavioral Health; Social services",
+    "link": "Website: <a href='https://uccwa.org/'>www.uccwa.org/</a>"
+  },
+  {
+    "name": "Honorary Consulate of Ukraine in Seattle",
+    "lat": 47.602190,
+    "lng": -122.333490,
+    "description": "Notarization; passport assistance; services for servicemen and their families",
+    "link": "Website: <a href='http://uaconsulate.org/'>www.uaconsulate.org</a>"
+  }
+]
