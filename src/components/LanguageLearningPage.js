@@ -17,7 +17,7 @@ const LanguageLearningPage = () => {
     { foreign: 'Дякую, це дуже допомагає', translation: 'Thank you, that helps a lot'},
     { foreign: 'Вибачте', translation: 'Excuse me'},
     { foreign: 'Приємно познайомитись', translation: 'Nice to meet you'},
-    { foreign: 'У вас є Facebook?', translation: 'Do you have Facebook'},
+    { foreign: 'У вас є Facebook?', translation: 'Do you have Facebook?'},
   ];
 
   const startGame = () => {
